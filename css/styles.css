@@ -9,11 +9,6 @@ html{
 *::before{
     box-sizing: inherit;
 }
-/* Breakpoints
-phones - 480px;
-tablet - 768px;
-desktop - 1200px */
-
 
 :root{
 --indent: 30px;
@@ -50,31 +45,28 @@ opacity: 1;
     padding-bottom: 120px;
 }
 .container{
-    /* Phone screen >= 320px */
     min-width: 320px;
     max-width: 448px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* width: 1158px;
-     */
+
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
     .container{
-   /* Tablet screen >= 768px */
-    max-width: 720px;
+        min-width: 720px;
     }
-}
-  
+} 
+
 @media screen and (min-width: 1200px) {
     .container{
-   /* Desktop screen >= 1200px */
-    max-width: 1200px;
+        min-width: 1200px;
     }
-}
-
+} 
 
 .body{
     color: var(--navy-blue);
@@ -87,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -329,6 +321,12 @@ color: var(--navy-blue);
 padding-top: 0px;
 }
 
+@media screen and (max-width: 1199px) {
+    .section2{
+        display: none;
+    }
+} 
+
 
 .portfolio-text {
     text-align: center;
@@ -413,6 +411,12 @@ line-height: 1.11;
 .socials-link:hover, .socials-link:focus{
     background-color:  var(--ocean);
 }
+
+/* .customers{
+    display: flex;
+    flex-wrap: wrap;
+    --items:3;
+} */
 .customer-text {
     text-align: center;
     font-weight: 700;
@@ -422,9 +426,27 @@ line-height: 1.11;
 }
 
 .customers-list{
+    /* display: flex;
+    gap: 24px; */
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
 }
+
+@media screen and (min-width: 768px) {
+    .customers-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    .customers-list{
+        display: flex;
+        gap: 24px;
+    }
+} 
 
 .customers-item{
     width: 168px;
@@ -625,13 +647,6 @@ padding: 100px 0px;
 
 .footer-container{
     display: flex;
-}
-
-@media screen and (min-width: 480px) {
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .footer-social{
