@@ -206,6 +206,19 @@ gap: 40px;
     color: var(--ocean);
 }
 
+.menu-hamburger-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.menu-hamburger {
+    width: 40px;
+    height: 40px;
+}
+
+
 
 .main {
 }
