@@ -110,13 +110,13 @@
             <h2 class="portfolio-text">What are we doing</h2>
             <ul class="prtfolio-img list">
                 <li class="portfolio-list ">
-                    <img src="./images/section2/img1.jpg" alt="computers" width="360" height="300" class="portfolio-img">
+                    <img srcset="./images/section2/img1.jpg 1x, ./images/section2/Rectangle71@2x-2.jpg 2x" src="./images/section2/img1.jpg" alt="computers" width="360" height="300" class="portfolio-img portfolio-img1">
                 </li>
                 <li class="portfolio-list">
-                    <img src="./images/section2/img2.jpg" alt="phones" width="360" height="300" class="portfolio-img">
+                    <img srcset="./images/section2/img2.jpg 1x, ./images/section2/Rectangle71@2x-1.jpg 2x" src="./images/section2/img2.jpg" alt="phones" width="360" height="300" class="portfolio-img portfolio-img2">
                 </li>
                 <li class="portfolio-list">
-                    <img src="./images/section2/img3.jpg" alt="phone in hand" width="360" height="300" class="portfolio-img">
+                    <img srcset="./images/section2/img3.jpg 1x, ./images/section2/Rectangle71@2x.jpg 2x" src="./images/section2/img3.jpg" alt="phone in hand" width="360" height="300" class="portfolio-img portfolio-img3">
                 </li>
             </ul>
             </div>
@@ -127,7 +127,40 @@
             <h2 class="team-text">Our Team</h2>
             <Ul class="list-team list" >
                 <li class="team-item">
-                    <img src="./images/team/1.jpg" alt="" class="team-img">
+                    <!-- <img src="./images/team/imgdesk@1x-3.jpg" alt="" class="team-img"> -->
+
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/team/markdesk@1x.jpg 1x,
+                            ./images/team/markdesk@2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/team/marktab@1x.jpg 1x,
+                          ./images/team/marktab@2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+        
+                        <source
+                          srcset="
+                          ./images/team/markmob@1x.jpg 1x,
+                          ./images/team/markmob@2x.jpg 2x
+                          "
+                          media="(min-width: 320px)"
+                        />
+        
+                        <img
+                          class="team-image"
+                          src="./images/team/markdesk@1x.jpg"
+                          alt="photo Mark"
+                          width="264"
+                        />
+                      </picture>
+
                     <div class="div-team-text">
                     <h3 class="team-desc">Mark Guerrero</h3>
                     <p class="team-subtext">Product Designer</p>
@@ -165,7 +198,38 @@
                     
                 </li>
                 <li class="team-item">
-                    <img src="./images/team/2.jpg" alt="" class="team-img">
+                    <!-- <img src="./images/team/img@1x-1.jpg" alt="" class="team-img"> -->
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/team/tomdesk@1x.jpg 1x,
+                            ./images/team/tomdesk@2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/team/tomtab@1x.jpg 1x,
+                          ./images/team/tomtab@2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+        
+                        <source
+                          srcset="
+                          ./images/team/tommob@1x.jpg 1x,
+                          ./images/team/tommob@2x.jpg 2x
+                          "
+                          media="(min-width: 320px)"
+                        />
+        
+                        <img
+                          class="team-image"
+                          src="./images/team/tomdesk@1x.jpg"
+                          alt="photo Tom"
+                          width="264"
+                        />
+                      </picture>
                     <div class="div-team-text">
                     <h3 class="team-desc">Tom Ford</h3>
                     <p class="team-subtext">Frontend Developer</p>
@@ -203,7 +267,38 @@
                     
                 </li>
                 <li class="team-item">
-                    <img src="./images/team/3.jpg" alt="" class="team-img">
+                    <!-- <img src="./images/team/img@1x-2.jpg" alt="" class="team-img"> -->
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/team/camilladesk@1x.jpg 1x,
+                            ./images/team/camilladesk@2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/team/camillatab@1x.jpg 1x,
+                          ./images/team/camillatab@2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+        
+                        <source
+                          srcset="
+                          ./images/team/camillamob@1x.jpg 1x,
+                          ./images/team/camillamob@2x.jpg 2x
+                          "
+                          media="(min-width: 320px)"
+                        />
+        
+                        <img
+                          class="team-image"
+                          src="./images/team/markdesk@1x.jpg"
+                          alt="photo Camila"
+                          width="264"
+                        />
+                      </picture>
                     <div class="div-team-text">
                     <h3 class="team-desc">Camila Garcia</h3>
                     <p class="team-subtext">Marketing</p>
@@ -241,7 +336,38 @@
                     
                 </li>
                 <li class="team-item">
-                    <img src="./images/team/4.jpg" alt="" class="team-img">
+                    <!-- <img src="./images/team/img@1x.jpg" alt="" class="team-img"> -->
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/team/danieldesk@1x.jpg 1x,
+                            ./images/team/danieldesk@2x.jpg 2x
+                          "
+                          media="(min-width:1200px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/team/danieltab@1x.jpg 1x,
+                          ./images/team/danieltab@2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+        
+                        <source
+                          srcset="
+                          ./images/team/danielmob@1x.jpg 1x,
+                          ./images/team/danielmob@2x.jpg 2x
+                          "
+                          media="(min-width: 320px)"
+                        />
+        
+                        <img
+                          class="team-image"
+                          src="./images/team/danieldesk@1x.jpg"
+                          alt="photo Daniel"
+                          width="264"
+                        />
+                      </picture>
                     <div class="div-team-text">
                     <h3 class="team-desc">Daniel Wilson</h3>
                     <p class="team-subtext">UI Designer</p>
