@@ -1001,19 +1001,19 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 
 }
-
-@media screen and (min-width:768px) {
-    .footer-subscribe{
-        /* margin: 0; */
-        margin-left: 108px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     .footer-subscribe{
         width: 100%;
     }
 }
+
+/* @media screen and (min-width:768px) {
+    .footer-subscribe{
+        margin-left: 108px;
+    }
+} */
+
+
 
 @media screen and (min-width:1200px) {
     .footer-subscribe{
