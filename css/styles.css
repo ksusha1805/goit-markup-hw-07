@@ -41,14 +41,14 @@ opacity: 1;
 }
 
 .advantage, .section2, .team, .customers{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .advantage, .section2, .team, .customers{
-        padding-top: 96px;
-    padding-bottom: 96px;
+        padding-top: 120px;
+    padding-bottom: 120px;
     }
 } 
 
@@ -993,7 +993,7 @@ letter-spacing: 0.02em;
 }
 
 .footer-subscribe{
-    
+    width: 100%;
     color: var(--white);
 font-weight: 500;
 font-size: 16px;
@@ -1019,6 +1019,7 @@ margin-left: 0;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    width: 100%;
 }
 
 @media screen and (min-width:768px) {
@@ -1051,7 +1052,7 @@ margin-left: 0;
     align-items: center;
     letter-spacing: 0.04em;
     color: #fff;
-    max-width: 396px;
+    width: 100%;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 16px;
     margin-left: auto;
@@ -1327,8 +1328,8 @@ label{
 }
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 24px;
+    min-width: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1364,7 +1365,7 @@ label{
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 32px;
+    padding-left: 40px;
     background-color: var(--white);
     z-index: 999;
     color: var(--navy-blue); 
@@ -1381,12 +1382,13 @@ label{
   
   .menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 32px;
+    right: 32px;
   }
   
   .mobile-menu {
     padding: 0;
+    padding-top: 80px;
     list-style: none;
     font-weight: 700;
 font-size: 36px;
@@ -1403,8 +1405,11 @@ margin-bottom: auto;
   
   .mobile-menu .link {
     display: block;
-    padding: 10px;
     text-decoration: none;
+  }
+
+  .mobile-menu-list{
+    margin-bottom: 40px;
   }
 
   .mobile-tel{
@@ -1451,6 +1456,7 @@ a.mobile-list.link.current{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 40px;
 }
 
 .contact-mobile-section-item-phone {
@@ -1460,6 +1466,12 @@ a.mobile-list.link.current{
     text-transform: capitalize;
     color: var(--iris);
     transition: color var(--transition);
+}
+
+@media screen and (max-width: 420px) {
+    .contact-mobile-section-item-phone{
+        font-size: 30px;
+    }
 }
 
 .contact-mobile-section-item-phone:hover, .contact-mobile-section-item-phone:focus {
